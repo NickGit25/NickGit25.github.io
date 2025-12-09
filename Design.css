@@ -1,18 +1,27 @@
+@font-face {
+    font-family: 'Ethnocentric';
+    src:url('EthnocentricRg.otf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ethnocentric', sans-serif;
 }
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to right, #421bad, #090722);
 }
 
 .header {
     width: 100%;
-    background-color: white;
-    border-bottom: 1px solid black;
+    background-color:  #050408;
+    border-bottom: 1px solid rgb(237, 232, 252);
+    color: rgb(247, 245, 252);
 }
 
 .top_header {
@@ -40,7 +49,7 @@ body {
 .bottom_header {
     display: flex;
     justify-content: center;
-    background: rgb(204, 204, 204);
+    background: #050408;
     padding: 12px 0;
 }
 
@@ -56,7 +65,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(51, 51, 51);
+    color: rgb(247, 245, 252);
     font-size: 1.3rem;
     display: block;
 }
@@ -70,6 +79,8 @@ main {
     margin: 100px auto;
 }
 
+/* Description Section Styles */
+
 .description {
     display: flex;
     flex-direction: column;
@@ -81,24 +92,43 @@ main {
     padding-top: 6%;
 }
 
+.description_header {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.description .description_text {
+    font-size: 3rem;
+    margin-left: 30px;
+}
+
+.description_text .name {
+    display: block;
+    text-align: right;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* Photo Collage Section Styles */
+
 .photo_collage {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, auto);
-    gap: 30px;
+    gap: 70px;
+    
 }
 
 .image {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 3px 4px 3px 2px rgba(8, 8, 10, 0.5);
+    box-shadow: 0px 0px 13px 6px rgb(147, 131, 238);
 }
+
 .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
 }
 
 .photo_collage .image:nth-child(1) {
@@ -114,9 +144,9 @@ main {
 
 
 .photo_collage .image:nth-child(3) {
-    grid-row : span 4;
+    grid-row: span 4;
     grid-column: span 2;
-    
+
 }
 
 .photo_collage .image:nth-child(4) {
@@ -132,12 +162,12 @@ footer {
     padding: 30px 20px;
     display: flex;
     width: 100%;
-    background: lightgray;
-    border: 1px solid black;
+    background: #050408;
+    color: #f7f5fc;;
     gap: 20px;
+    border-top: 1px solid rgb(237, 232, 252);
 }
 
 footer a {
     text-decoration: none;
-    color: black;
 }
