@@ -25,7 +25,7 @@ body {
     color: #f7f5fc;
 }
 
-.header::before {
+/* .header::before {
     content:"";
     position: absolute;
     top: 0;
@@ -37,7 +37,7 @@ body {
     background: linear-gradient(134deg, #02010c, #f7f5fc, #290d79, #6622c0);
 
     
-}
+} */
 
 .top_header {
     position: relative;
