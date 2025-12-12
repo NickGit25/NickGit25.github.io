@@ -25,20 +25,6 @@ body {
     color: #f7f5fc;
 }
 
-/* .header::before {
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-    background: linear-gradient(134deg, #02010c, #f7f5fc, #290d79, #6622c0);
-
-    
-} */
-
 .top_header {
     position: relative;
     display: flex;
@@ -54,7 +40,7 @@ body {
 
 .title {
     position: absolute;
-    left: 50%;
+    left: 51.5%;
     transform: translate(-50%);
     margin: 0;
     font-size: 2.2rem;
@@ -75,7 +61,8 @@ nav ul {
     padding: 0;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 7%;
 }
 
 nav ul li a {
@@ -83,7 +70,9 @@ nav ul li a {
     color: rgb(247, 245, 252);
     font-size: 1.3rem;
     display: block;
-}
+} 
+
+/* Need to add active class styles here later */
 
 /* Main Content Styles */
 
@@ -94,84 +83,6 @@ main {
     margin: 100px auto;
 }
 
-/* Description Section Styles */
-
-.description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex: 1;
-    padding-right: 6%;
-    margin-left: 4%;
-    padding-top: 6%;
-    color: rgb(194, 187, 218);
-}
-
-.description_header {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-
-.description .description_text {
-    font-size: 1.7rem;
-    line-height: 2;
-    margin-left: 30px;
-}
-
-.description_text .name {
-    display: block;
-    text-align: right;
-    font-size: 2rem;
-    margin-top: 20px;
-}
-
-/* Photo Collage Section Styles */
-
-.photo_collage {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, auto);
-    gap: 70px;
-    
-}
-
-.image {
-    box-shadow: 0px 0px 13px 6px rgb(100, 75, 236);
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.photo_collage .image:nth-child(1) {
-    grid-column: span 4;
-    grid-row: span 2;
-}
-
-.photo_collage .image:nth-child(2) {
-    grid-row: span 6;
-    grid-column: span 6;
-
-}
-
-
-.photo_collage .image:nth-child(3) {
-    grid-row: span 4;
-    grid-column: span 2;
-
-}
-
-.photo_collage .image:nth-child(4) {
-    grid-row: span 4;
-    grid-column: span 2;
-
-}
-
-
 /* Footer Styles */
 
 footer {
@@ -179,6 +90,7 @@ footer {
     display: flex;
     width: 100%;
     background: #050408;
+    margin-top: auto;
     gap: 20px;
     border-top: 1px solid  rgb(57, 44, 95);
 }
